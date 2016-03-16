@@ -2,12 +2,11 @@
 <html lang="en" ng-app="sampleDirectives">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Hello World</title>
     <script src="../node_modules/angular/angular.min.js"></script>
     <script src="./code.js"></script>
 </head>
-<body>
-    <a href="/"><<< back</a><br>
-    <sixth-directive ng-model="name"></sixth-directive>
+<body ng-controller="ListCtrl">
+<post ng-repeat="element in list" item="element"></post>
 </body>
 </html>

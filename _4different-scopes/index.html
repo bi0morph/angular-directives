@@ -6,10 +6,17 @@
     <script src="../node_modules/angular/angular.min.js"></script>
     <script src="./code.js"></script>
 </head>
-<body >
-    <a href="/"><<< back</a><br>
-    <same-scope></same-scope><br>
-    <new-inherit-scope></new-inherit-scope><br>
-    <isolated-scope config="config" notify="not" on-change="count(hello)"></isolated-scope>
+<body ng-controller="InitCtrl">
+    <same-scope></same-scope>
+
+    <br>
+    <new-inherit-scope></new-inherit-scope>
+
+
+    <br>
+    <isolated-scope config="config"
+                    notify="not"
+                    on-change="count(hello)"
+            ></isolated-scope>
 </body>
 </html>

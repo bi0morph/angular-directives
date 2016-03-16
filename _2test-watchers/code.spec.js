@@ -2,7 +2,7 @@ describe("Check simple hello world directive", function() {
 	var compile, scope, directiveElem;
 
 	function getCompiledElement(){
-		var element = angular.element('<div><hello-world></hello-world></div>');
+		var element = $('<div><second-directive></second-directive></div>');
 		var compiledElement = compile(element)(scope);
 		scope.$digest();
 		return compiledElement;

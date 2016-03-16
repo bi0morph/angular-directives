@@ -2,13 +2,13 @@
 
 angular.module('sampleDirectives', [])
 	.controller('InitCtrl', function InitCtrl($scope){
-		$scope.hello = 'world';
+			$scope.hello = 'world';
 
-		$scope.config = 'con';
-		$scope.not = 'notify';
-		$scope.count = function(x) {
-			alert(x);
-		};
+			$scope.config = 'con';
+			$scope.not = 'notify';
+			$scope.count = function(x) {
+				alert(x);
+			};
 	})
 	.directive('sameScope', function(){
 		return {
